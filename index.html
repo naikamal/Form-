@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- <style>
+     
+        label and input[type="text"]{
+            display: block;
+        }
+        #form-div{
+            border-radius: 2%;
+            border: 1px solid rgb(34, 30, 30);
+            align-items: center; 
+            width: 40%; 
+            margin: auto;
+            display: grid;
+            place-items: center;
+            box-sizing: border-box;
+            padding:0 5% 5% 5%;
+            background-color: #41959588;
+            color: white;
+
+        }
+        form fieldset{
+            padding:5% 5%;
+            box-shadow: 10px 15px 10px #42434388;
+            background-color: rgb(49, 49, 51);
+            /* box-shadow: rgba(17, 17, 17, 0.15) 0px 48px 100px 0px; */
+        }
+        
+    </style> -->
+</head>
+
+<body>
+
+    <table align="center" border="1px" cellpadding="5px">
+
+        <h2 align="center">Student Registration Form</h2>
+        <form action="backend.php" ">
+           
+                <tr><td>
+            <p><label for=" name">Full Name:</label><br>
+            <input type="text" name="name" id="name" placeholder="Name"></p>
+            </td>
+            </tr>
+            <tr>
+                <td >
+                    <p><label for="name">Father Name:</label><br>
+                        <input type="text" name="fname" id="fname" placeholder="Father name"><br>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Department:</label><br>
+                    <input type="text" name="deptartment" id="dept" placeholder="Department"><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="package">Select Your Semester:</label><br>
+                    <select name="semester" id="semester">
+                        <option value="1">1 Semester</option>
+                        <option value="2">2 Semester</option>
+                        <option value="3">3 Semester</option>
+                        <option value="4">4 Semester</option>
+                        <option value="5">5 Semester</option>
+                        <option value="6">6 Semester</option>
+                        <option value="7">7 Semester</option>
+                        <option value="8">8 Semester</option>
+
+                    </select><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Date Of Birth</label>
+                    <input type="date" name="date" id="date">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" name="email" id="email" placeholder="Example101@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="noperson">Cell Phone#</label>
+                    <input type="number" name="noperson" id="noperson" min="1" max="11"
+                        placeholder="1234567890"><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <Span>Which Programming Language you  would like?</Span><br>
+                    <label for="boarding">Python :</label>
+                    <input type="checkbox" name="boarding" id="boarding"><br>
+                    <label for="fooding">C++ :</label>
+                    <input type="checkbox" name="fooding" id="fooding"><br>
+                    <label for="sight">Java</label>
+                    <input type="checkbox" name="sight" id="sight"><br>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="code">Cell Phone#</label>
+                    <input type="text" name="code" id="code" placeholder="Code is here!">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Terms & Conditions:</span><br>
+                    <label for="agree">I agree</label>
+                    <input type="radio" name="condition" id="agree">
+                    <label for="disagree">I disagree</label>
+                    <input type="radio" name="condition" id="disagree">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit Form">
+                    <input type="reset" value="Reset Form">
+                </td>
+            </tr>
+
+
+        </form>
+
+    </table>
+</body>
+
+</html>
