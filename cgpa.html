@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cgpa Calculator</title>
+</head>
+<body>
+    <h2>Gpa Calculator</h2>
+    <form id="input">
+        <label for="sub1">Subject 1 :</label>
+        <input type="text" id="sub1"class="br">
+        <label for="sub2">Subject 2 :</label>
+        <input type="text" id="sub2" class="br">
+        <label for="sub3">Subject 3 :</label>
+        <input type="text" id="sub3" class="br">
+        <label for="sub4">Subject 4 :</label>
+        <input type="text" id="sub4" class="br">
+        <label for="sub5">Subject 5 :</label>
+        <input type="text" id="sub5" class="br">
+        <br>
+        <button onclick="Calculate()">Submit</button>
+        <input type="reset" value="Reset">
+        <p id="result"></p>
+    </form>
+    
+    <script>
+        function Calculate(){
+            let marks1=document.getElementById("sub1").value;
+            let marks2=document.getElementById("sub2").value;
+            let marks3=document.getElementById("sub3").value;
+            let marks4=document.getElementById("sub4").value;
+            let marks5=document.getElementById("sub5").value;
+            let sum=parseInt(marks1) + parseInt(marks2) + parseInt(marks3) + parseInt(marks4) + parseInt(marks5);
+            let percent=parseInt(sum)/5;
+            document.getElementById("result").innerHTML="Your Percentage = "+ percent;
+
+            
+
+        }
+
+        let all_inputs=document.querySelectorAll(".br");
+        all_inputs.forEach(box => {
+            box.input
+            box.style.display="flex";
+            box.style.backgroundColor="grey";
+        });
+    </script>
+</body>
+</html>
